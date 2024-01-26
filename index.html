@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Expense Tracker</title>
+</head>
+<body>
+   <header>
+    <h1>Expense Tracker</h1>
+   </header>
+   <main>
+      <div class="container">
+        <section id="mainDisplay">
+            <div class="displayWrapper">
+                <div>
+                    <h2>balance</h2>
+                    <span id="balance">00.00</span><span class="ruppeeSymbol">&#x20B9</span>
+                </div>
+                <div>
+                    <h2>income</h2>
+                    <span id="incomeTotal">00.00</span><span class="ruppeeSymbol">&#x20B9</span>
+                </div>
+                <div>
+                    <h2>expense</h2>
+                    <span id="expenseTotal">00.00</span><span class="ruppeeSymbol">&#x20B9</span>
+                </div>
+            </div>
+        </section>
+        <section id="transationList">
+          <h3>Transactions</h3>
+          <div class="transationList-wrapper">
+            
+              <ul id="list">
+                
+              </ul>
+          </div>
+        </section>
+        <section id="tranactionForm">
+           <h3>Add transactions</h3>
+            <div class="addTransation-wrapper">
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="amountAndDate">
+                        <div>
+                            <label for="amount">Amount</label>
+                            <input type="number" name="amount" id="amount" required>
+                        </div>
+                        <div>
+                            <label for="name">Date</label>
+                            <input type="date" name="date" id="date" required>
+                        </div>
+                    </div>
+                    <div id="checkboxWrapper">
+                        <div>
+                            <input type="checkbox" id="checkbox1" value="income">
+                            <label for="checkbox1" id="checkboxLabel1">Income</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox2" value="expense">
+                            <label for="checkbox2" id="checkboxLabel2">Expense</label>
+                        </div>
+                    </div>
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </section>
+      </div>
+   </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
